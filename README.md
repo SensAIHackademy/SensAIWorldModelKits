@@ -6,7 +6,7 @@ This is a collection of world model kits for building immersive world model expe
 
 1. [WorldLabs WebXR Kit](#1-worldlabs-webxr-kit) 
 2. [WorldLabs Unity Kit](#2-worldlabs-unity-kit) 
-3. [WorldLabs Unreal Kit](#3-worldlabs-webxr-kit)  
+3. [WorldLabs Unreal Kit](#3-worldlabs-unreal-kit)  
 4. [Acknowledgements & Credits](#4-acknowledgements--credits)  
 5. [License](#5-license)
 6. [Contact](#6-contact)
@@ -14,7 +14,7 @@ This is a collection of world model kits for building immersive world model expe
 
 ## Overview
 
-## 1. WorldLabs WebXR Kit (Spark.js)
+## 1. WorldLabs WebXR Kit
 
 🎯 A WebXR template project for building immersive world model experiences with Gaussian splats, spatial UI, and locomotion - runnable in any WebXR-capable browser.
 
@@ -32,6 +32,8 @@ This is a collection of world model kits for building immersive world model expe
 
 
 #### GitHub: 👉 [WorldLabs WebXR Kit](https://github.com/V4C38/sensai-webxr-worldmodels) 
+
+<img src="https://github.com/user-attachments/assets/c91ccbd8-23dd-473b-9515-86ca40365e50" alt="WorldLabsWebXRKit" width="540px">
 
 ---
 
@@ -60,6 +62,8 @@ This is a collection of world model kits for building immersive world model expe
 
 #### GitHub: 👉 [WorldLabs Unity Kit](https://github.com/nigelhartman/worldlabs_unity) 
 
+<img src="https://github.com/user-attachments/assets/829b6dc1-aafe-434e-8a75-0a7eac293956" alt="WorldLabsUnityKit" width="540px">
+
 ---
 
 ## 3. WorldLabs Unreal Kit
@@ -79,6 +83,8 @@ This is a collection of world model kits for building immersive world model expe
 
 
 #### GitHub: 👉 [WorldLabs Unreal Kit](https://github.com/V4C38/sensai-unreal-worldmodels)  
+
+<img src="https://github.com/user-attachments/assets/31b9611d-ce9b-4651-ad35-e5e891d1699e" alt="WorldLabsUnrealKit" width="540px">
 
 ---
 
