@@ -62,7 +62,7 @@ This is a collection of world model kits for building immersive world model expe
 
 #### GitHub: 👉 [WorldLabs Unity Kit](https://github.com/nigelhartman/worldlabs_unity) 
 
-<img src="https://github.com/user-attachments/assets/829b6dc1-aafe-434e-8a75-0a7eac293956" alt="WorldLabsUnityKit" width="540px">
+<img src="https://github.com/user-attachments/assets/b151d0c7-90e7-496c-a21f-804151f25466" alt="WorldLabsUnityKit" width="540px">
 
 ---
 
