@@ -89,11 +89,11 @@ This is a collection of world model kits for building immersive world model expe
 ---
 
 ## 4. Acknowledgements & Credits
-* Check out our [Master SensAI Kits](https://github.com/SensAIHackademy/SensAIKits) for a full collection of context-aware AI tools for Unity and Meta XR, ready to power your XR and AI projects
+* Check out our [Master SensAI Kits](https://github.com/SensAIHackademy/SensAIKits) for a full collection of context-aware AI tools for Unity and Meta XR.
+* Explore [SensAI PICO Kits](https://github.com/SensAIHackademy/SensAI-PICO-Kits) for world model & voice-command templates for PICO.
 * Join the [Worlds in Action Hack](https://sensaihack.com) and connect with a community of creators and innovators.
-* Visit our our [SensAI Knowledge Hub](https://xrbootcamp.notion.site/SensAI-Knowledge-Hub-21f0095e34d880ec9826d9749ae56619) for curated learning use cases and inspiration across AI, XR, and robotics.
-* Thanks to [Nigel Hartman](https://www.linkedin.com/in/nigelhartman/)  for the WorldLabs Unity package - a great source of AI & XR insights.
-* Big thanks to [Johannes Tscharn](https://x.com/JohannesTscharn) for the Unreal and WebXR world model templates - check out his work for more cool XR projects.
+* Visit our our [SensAI Knowledge Hub](https://xrbootcamp.notion.site/SensAI-Knowledge-Hub-21f0095e34d880ec9826d9749ae56619) for curated learning resources and inspiration.
+* Thanks to [Nigel Hartman](https://www.linkedin.com/in/nigelhartman/) and [Johannes Tscharn](https://x.com/JohannesTscharn) for the kits.
 
 Powered by [SensAI Hackademy](https://sensaihackademy.com)
 
