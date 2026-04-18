@@ -2,6 +2,13 @@
 
 This is a collection of world model kits for building immersive world model experiences across WebXR, Unity and Unreal Engine.
 
+## 🎥 Tutorials & Demos
+
+[Watch the playlist](https://www.youtube.com/playlist?list=PLRQI9ZSqDkKfcfnITW0hK-vxlfMuS6PUT)
+▶️ Explore step-by-step tutorials and demos
+
+---
+
 ## 📝 Table of Contents
 
 1. [WorldLabs WebXR Kit](#1-worldlabs-webxr-kit) 
