@@ -6,6 +6,8 @@ This is a collection of world model kits for building immersive world model expe
 
 [Watch the playlist](https://www.youtube.com/playlist?list=PLRQI9ZSqDkKfcfnITW0hK-vxlfMuS6PUT)
 ▶️ Explore step-by-step tutorials and demos
+<img width="734" height="343" alt="image" src="https://github.com/user-attachments/assets/7a24893a-91e1-4ba9-a9a0-b7370208e2fe" />
+
 
 ---
 
