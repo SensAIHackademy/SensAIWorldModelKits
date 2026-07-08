@@ -26,21 +26,20 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 1. Splat Analyzer
 
-🎯 Find objects in a 3D Gaussian Splat — no manual annotation, no training. Give it a splat file (.ply or .spz) and a plain-English prompt like "chair, table, monitor", and it returns a 3D bounding box (position + size) for each object it finds — ready to use as interaction zones in WebXR, games, or robotics.
+🎯 Detect objects in 3D Gaussian Splats without manual annotation or training. Upload a .ply or .spz file and use a simple prompt (e.g., “chair, table, monitor”) to get 3D bounding boxes ready for interactions in WebXR, games, or robotics.
 
 <br>
 
-- Runs the same pipeline locally (Mac Apple Silicon via Metal, or PC/Linux with an NVIDIA GPU) or as a hosted web app + REST API + admin panel for events
-- Pipeline: renders synthetic camera views around the splat, runs OWLv2 open-vocabulary detection per frame, lifts 2D boxes to 3D via depth, then clusters detections across views into one box per object
-- Works with virtually any standard Gaussian Splat (.ply or .spz, including World Labs and XGRIDS exports)
+- Works with standard Gaussian Splats, including World Labs and XGRIDS exports
+- Runs locally (Mac Apple Silicon / NVIDIA GPU) or as a hosted web app + REST API
+- Pipeline: renders views → detects objects with OWLv2 → converts 2D detections into 3D boxes
 
 <br>
 
 :warning: Setup Notes
-* **Mac (Apple Silicon):** `./install_mac.sh`, renders via Metal - no NVIDIA hardware needed
-* **PC/Linux with NVIDIA GPU:** local CLI, CUDA renderer - requires CUDA 11.8 or 12.x, 8 GB VRAM minimum
-* **Hosting for others (e.g. an event):** `deploy.sh` spins up the web app, REST API, and admin panel via Docker
-* **Orientation:** check that your splat is right-side up before running - some exporters flip the vertical axis, which will throw off camera placement and detections
+* **Mac**: Metal support, no NVIDIA GPU needed
+* **PC/Linux**: CUDA GPU required (8GB+ VRAM recommended)
+* Ensure splat orientation is correct before running
 
 
 #### GitHub: 👉 [Splat Analyzer](https://github.com/nigelhartman/splat_analyzer)
