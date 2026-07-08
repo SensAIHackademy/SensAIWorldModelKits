@@ -13,17 +13,45 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 📝 Table of Contents
 
-1. [WorldLabs WebXR Kit](#1-worldlabs-webxr-kit) 
-2. [WorldLabs Unity Kit](#2-worldlabs-unity-kit) 
-3. [WorldLabs Unreal Kit](#3-worldlabs-unreal-kit)  
-4. [Acknowledgements & Credits](#4-acknowledgements--credits)  
-5. [License](#5-license)
-6. [Contact](#6-contact)
+1. [Splat Analyzer](#1-splat-analyzer)
+2. [WorldLabs WebXR Kit](#2-worldlabs-webxr-kit) 
+3. [WorldLabs Unity Kit](#3-worldlabs-unity-kit) 
+4. [WorldLabs Unreal Kit](#4-worldlabs-unreal-kit)  
+5. [Acknowledgements & Credits](#5-acknowledgements--credits)  
+6. [License](#6-license)
+7. [Contact](#7-contact)
 
 
 ## Overview
 
-## 1. WorldLabs WebXR Kit
+## 1. Splat Analyzer
+
+🎯 Find objects in a 3D Gaussian Splat — no manual annotation, no training. Give it a splat file (.ply or .spz) and a plain-English prompt like "chair, table, monitor", and it returns a 3D bounding box (position + size) for each object it finds — ready to use as interaction zones in WebXR, games, or robotics.
+
+<br>
+
+- Runs the same pipeline locally (Mac Apple Silicon via Metal, or PC/Linux with an NVIDIA GPU) or as a hosted web app + REST API + admin panel for events
+- Pipeline: renders synthetic camera views around the splat, runs OWLv2 open-vocabulary detection per frame, lifts 2D boxes to 3D via depth, then clusters detections across views into one box per object
+- Works with virtually any standard Gaussian Splat (.ply or .spz, including World Labs and XGRIDS exports)
+
+<br>
+
+:warning: Setup Notes
+* **Mac (Apple Silicon):** `./install_mac.sh`, renders via Metal - no NVIDIA hardware needed
+* **PC/Linux with NVIDIA GPU:** local CLI, CUDA renderer - requires CUDA 11.8 or 12.x, 8 GB VRAM minimum
+* **Hosting for others (e.g. an event):** `deploy.sh` spins up the web app, REST API, and admin panel via Docker
+* **Orientation:** check that your splat is right-side up before running - some exporters flip the vertical axis, which will throw off camera placement and detections
+
+
+#### GitHub: 👉 [Splat Analyzer](https://github.com/nigelhartman/splat_analyzer)
+
+<img width="800" height="450" alt="SplatanalyzerCompressed" src="https://github.com/user-attachments/assets/74c5a814-18df-4d8c-974c-a6cc4563ba17" />
+
+
+
+---
+
+## 2. WorldLabs WebXR Kit
 
 🎯 A WebXR template project for building immersive world model experiences with Gaussian splats, spatial UI, and locomotion - runnable in any WebXR-capable browser.
 
@@ -46,7 +74,7 @@ This is a collection of world model kits for building immersive world model expe
 
 ---
 
-## 2. WorldLabs Unity Kit
+## 3. WorldLabs Unity Kit
 
 🎯 A Unity package for generating and rendering 3D Gaussian Splatting scenes using the WorldLabs API with a built-in runtime VR world browser.
 
@@ -75,7 +103,7 @@ This is a collection of world model kits for building immersive world model expe
 
 ---
 
-## 3. WorldLabs Unreal Kit
+## 4. WorldLabs Unreal Kit
 
 🎯 An Unreal Engine 5.5 template project for rendering Gaussian splats using the XVERSE XV3DGS plugin.
 <br>
@@ -97,7 +125,7 @@ This is a collection of world model kits for building immersive world model expe
 
 ---
 
-## 4. Acknowledgements & Credits
+## 5. Acknowledgements & Credits
 * Check out our [Master SensAI Kits](https://github.com/SensAIHackademy/SensAIKits) for a full collection of context-aware AI tools for Unity and Meta XR.
 * Explore [SensAI PICO Kits](https://github.com/SensAIHackademy/SensAI-PICO-Kits) for world model & voice-command templates for PICO.
 * Check out [SensAI Hacks](https://sensaihack.com) and connect with a community of creators and innovators.
@@ -108,14 +136,14 @@ Powered by [SensAI Hackademy](https://sensaihackademy.com)
 
 ---
 
-## 5. License
+## 6. License
 📜 By downloading and using these kits, you agree to the [License Terms](./LICENSE).
 
 
 ---
 
-## 6. Contact
-✉️ Have questions, suggestions, or feedback? We’d love to hear from you!
+## 7. Contact
+✉️ Have questions, suggestions, or feedback? We'd love to hear from you!
 Reach out to us at hello@sensaihack.com
 
 <br>
