@@ -44,7 +44,7 @@ This is a collection of world model kits for building immersive world model expe
 
 #### GitHub: 👉 [Splat Analyzer](https://github.com/nigelhartman/splat_analyzer)
 
-<img width="800" height="450" alt="SplatanalyzerCompressed" src="https://github.com/user-attachments/assets/74c5a814-18df-4d8c-974c-a6cc4563ba17" />
+<img width="540px" alt="SplatanalyzerCompressed" src="https://github.com/user-attachments/assets/74c5a814-18df-4d8c-974c-a6cc4563ba17" />
 
 
 
