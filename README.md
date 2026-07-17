@@ -4,9 +4,10 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 🎥 Tutorials & Demos
 
-[Watch the playlist](https://www.youtube.com/playlist?list=PLRQI9ZSqDkKfcfnITW0hK-vxlfMuS6PUT)
+[Watch the playlist](https://www.youtube.com/playlist?list=PLNJ7-FU87tTY)
 ▶️ Explore step-by-step tutorials and demos
-<img width="734" height="343" alt="image" src="https://github.com/user-attachments/assets/7a24893a-91e1-4ba9-a9a0-b7370208e2fe" />
+
+<img width="734" alt="image" src="https://github.com/user-attachments/assets/066aeb38-a90e-4cd4-8194-c3a2ad826a29" />
 
 
 ---
@@ -26,20 +27,23 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 1. Splat Analyzer
 
-🎯 Detect objects in 3D Gaussian Splats without manual annotation or training. Upload a .ply or .spz file and use a simple prompt (e.g., “chair, table, monitor”) to get 3D bounding boxes ready for interactions in WebXR, games, or robotics.
+Detects objects in 3D Gaussian Splats using Claude skills and OWLv2 - no manual annotation or training.
 
-<br>
+Upload a `.ply` or `.spz` file, prompt it with object names (e.g. "chair, table, monitor"), and get 3D bounding boxes ready for interactions in WebXR, games, or robotics.
 
-- Works with standard Gaussian Splats, including World Labs and XGRIDS exports
-- Runs locally (Mac Apple Silicon / NVIDIA GPU) or as a hosted web app + REST API
-- Pipeline: renders views → detects objects with OWLv2 → converts 2D detections into 3D boxes
+### Quickstart
+1. Clone the repo: `git clone https://github.com/nigelhartman/splat_analyzer`
+2. Enter the directory: `cd splat_analyzer`
+3. Run locally (Mac Apple Silicon or NVIDIA GPU, 8GB+ VRAM) or use the hosted web app + REST API
+4. Upload your splat file and prompt with the object names you want detected
 
-<br>
+### Description
+Pipeline: renders views → detects objects with OWLv2 → converts 2D detections into 3D boxes. Works with standard Gaussian Splats, including World Labs and XGRIDS exports.
 
-:warning: Setup Notes
-* **Mac**: Metal support, no NVIDIA GPU needed
-* **PC/Linux**: CUDA GPU required (8GB+ VRAM recommended)
-* Ensure splat orientation is correct before running
+### Setup Notes
+- **Mac**: Metal support, no NVIDIA GPU needed
+- **PC/Linux**: CUDA GPU required (8GB+ VRAM recommended)
+- Ensure splat orientation is correct before running
 
 
 #### GitHub: 👉 [Splat Analyzer](https://github.com/nigelhartman/splat_analyzer)
@@ -52,19 +56,20 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 2. WorldLabs WebXR Kit
 
-🎯 A WebXR template project for building immersive world model experiences with Gaussian splats, spatial UI, and locomotion - runnable in any WebXR-capable browser.
+A WebXR template for building immersive world model experiences with Gaussian splats, spatial UI, and locomotion - runs in any WebXR-capable browser.
 
-<br>
+### Quickstart
+1. Clone the repo: `git clone https://github.com/V4C38/sensai-webxr-worldmodels`
+2. Enter the directory: `cd sensai-webxr-worldmodels`
+3. Install dependencies (Node ≥ 20.19.0 required)
+4. Load a local or remote `.spz`/`.ply` splat and launch in a WebXR-capable browser
 
-- Renders local or remote .spz/.ply Gaussian splats using SparkJS 2.0 with GPU-accelerated fly-in/fly-out animations
-- Includes Level-of-Detail (LoD) support - adjusts splat quality by distance to maintain stable framerates on headsets
-- Built on IWSDK for locomotion, grabbing, spatial UI, and XR session management
+### Description
+Renders splats using SparkJS 2.0 with GPU-accelerated fly-in/fly-out animations. Includes Level-of-Detail (LoD) support to adjust splat quality by distance and maintain stable framerates on headsets. Built on IWSDK for locomotion, grabbing, spatial UI, and XR session management.
 
-<br>
-
-:warning: Setup Notes
-* **Prerequisites**: Node ≥ 20.19.0 and a WebXR-capable browser
-* **Splat Files**: Keep large splat files outside the repo and load via URL
+### Setup Notes
+- **Prerequisites**: Node ≥ 20.19.0 and a WebXR-capable browser
+- **Splat Files**: Keep large splat files outside the repo and load via URL
 
 
 #### GitHub: 👉 [WorldLabs WebXR Kit](https://github.com/V4C38/sensai-webxr-worldmodels) 
@@ -75,25 +80,24 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 3. WorldLabs Unity Kit
 
-🎯 A Unity package for generating and rendering 3D Gaussian Splatting scenes using the WorldLabs API with a built-in runtime VR world browser.
+A Unity package for generating and rendering 3D Gaussian Splatting scenes using the WorldLabs API, with a built-in runtime VR world browser.
 
-<br>
+### Quickstart
+1. Clone the repo: `git clone https://github.com/nigelhartman/worldlabs_unity`
+2. Open the project in Unity 6000.2.10f1 (recommended)
+3. Add your WorldLabs API key to a `.env` file at the project root
+4. Generate a scene from a text prompt via the WorldLabs API
 
-- Generate 3D scenes from text prompts via the WorldLabs API
-- Real-time Gaussian Splat rendering with runtime loading and splat layer support
-- In-game VR/screen-space world browser and creator (WorldBrowserController)
-- Editor importer for browsing and importing worlds as project assets
+### Description
+Real-time Gaussian Splat rendering with runtime loading and splat layer support. Includes an in-game VR/screen-space world browser and creator (WorldBrowserController), plus an editor importer for browsing and importing worlds as project assets.
 
-<br>
-
-:warning: Setup Notes
-* **Unity Version:**  6000.2.10f1 recommended
-* **Render Pipeline:**  URP required
-* **Graphics API:** D3D11 is NOT supported - use D3D12/Vulkan (Windows), Metal (Mac), or Vulkan (Android/Quest)
-* **API Key:**  Obtain from WorldLabs and place in a .env file at the project root
-* **Render Graph:**  Enable "Compatibility Mode (Render Graph disabled)" in Project Settings > Graphics
-* **XR:**  Set OpenXR Render Mode to Multi-pass for VR builds
-* **Meta Quest:**  Adding a Camera Rig from "Meta Building Blocks" may force D3D11 - switch back to Vulkan manually
+### Setup Notes
+- **Unity Version**: 6000.2.10f1 recommended
+- **Render Pipeline**: URP required
+- **Graphics API**: D3D11 is NOT supported - use D3D12/Vulkan (Windows), Metal (Mac), or Vulkan (Android/Quest)
+- **Render Graph**: Enable "Compatibility Mode (Render Graph disabled)" in Project Settings > Graphics
+- **XR**: Set OpenXR Render Mode to Multi-pass for VR builds
+- **Meta Quest**: Adding a Camera Rig from "Meta Building Blocks" may force D3D11 - switch back to Vulkan manually
 
 
 #### GitHub: 👉 [WorldLabs Unity Kit](https://github.com/nigelhartman/worldlabs_unity) 
@@ -104,18 +108,20 @@ This is a collection of world model kits for building immersive world model expe
 
 ## 4. WorldLabs Unreal Kit
 
-🎯 An Unreal Engine 5.5 template project for rendering Gaussian splats using the XVERSE XV3DGS plugin.
-<br>
+An Unreal Engine 5.5 template for rendering Gaussian splats using the XVERSE XV3DGS plugin.
 
-- Import .ply splat files directly via the XV3DGS editor tab - produces a converted splat and a Blueprint ready to place in your level
-- Includes a training tool to convert .mp4 video into .ply splat files (requires CUDA 11+)
+### Quickstart
+1. Clone the repo: `git clone https://github.com/V4C38/sensai-unreal-worldmodels`
+2. Open the project in Unreal Engine 5.5 (XV3DGS is not compatible with later versions)
+3. Import a `.ply` splat file via the XV3DGS editor tab - produces a converted splat and a placeable Blueprint
+4. To convert video instead, use the included training tool (`.mp4` → `.ply`, requires CUDA 11+)
 
-<br>
+### Description
+Plugin is included under `Plugins/XV3dGS` and enabled automatically.
 
-:warning: Setup Notes
-* **Engine Version:** Unreal Engine 5.5 only - XV3DGS is not compatible with later versions
-* **Plugin:**  Included under Plugins/XV3dGS, enabled automatically
-* **Hardware Ray Tracking:** Make sure it is disables in project setting, due to incompatibility with XV3DGS
+### Setup Notes
+- **Engine Version**: Unreal Engine 5.5 only - XV3DGS is not compatible with later versions
+- **Hardware Ray Tracing**: Make sure it is disabled in project settings, due to incompatibility with XV3DGS
 
 
 #### GitHub: 👉 [WorldLabs Unreal Kit](https://github.com/V4C38/sensai-unreal-worldmodels)  
